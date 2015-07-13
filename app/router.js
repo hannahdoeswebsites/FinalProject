@@ -50,22 +50,6 @@ Router.map(function() {
     this.route('11');
   });
 
-  // 
-  // this.resource('base', {
-  //   path: '/'
-  // }, function() {
-  //
-  //   this.path('application');
-  //
-  //   // the rest of the app
-  // });
-  //
-  // this.resource('westEnd', {
-  //   path: '/questions/1'
-  // }, function() {
-  //   // admin part
-  // });
-
 });
 
 export default Router;

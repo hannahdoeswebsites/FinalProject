@@ -1,0 +1,272 @@
+@import 'bower_components/bourbon/app/assets/stylesheets/bourbon';
+@import 'bower_components/neat/app/assets/stylesheets/neat';
+
+@media only screen and (min-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 320px) {
+
+}
+
+// Typography
+$base-font-family: $helvetica;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$very-light-gray: #fafafa;
+
+$base-font-color: $dark-gray;
+$base-background-color: $very-light-gray;
+
+body {
+
+    background: url('images/MainPageBackground.jpeg') no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   @include span-columns(12);
+
+
+}
+
+header {
+
+height: auto;
+margin: 0px auto;
+width: 100%;
+overflow: auto;
+
+
+}
+
+
+.logo {
+height: 17em;
+@include span-columns(6);
+@include shift(.5);
+background: url('images/townsontourGreenville.png') no-repeat left;
+background-size: contain;
+float: left;
+}
+
+.wrap {
+
+  @include span-columns(3);
+  float: right;
+  margin-top: 60px;
+  padding-right: 100px;
+
+}
+.button {
+  border: 4px solid rgba(5, 46, 68, 1);
+  border-radius: 80%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  text-decoration: none;
+  background: rgba(104, 176, 198, 1);
+  color: darken(rgba(5, 46, 68, 1), 15);
+
+
+  &.active {
+    .js & {
+      animation: 600ms orbitGlow forwards ease-in-out;
+    }
+  }
+
+  &:active {
+    .no-js & {
+      animation: 600ms orbitGlow forwards ease-in-out;
+    }
+  }
+}
+
+@keyframes orbitGlow {
+  0% {
+    box-shadow: 0 0 0 25px transparent;
+  }
+
+  50% {
+    box-shadow: 0 0 0 50px rgba(#518C82, .10);
+  }
+
+  100% {
+    box-shadow: 0 0 0 75px transparent;
+  }
+}
+
+
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#main {
+background-color: white;
+overflow:auto;
+padding-bottom: 80px;
+}
+
+
+#wrap {
+  min-height: 100%;
+}
+
+.footer {
+  background-color: black;
+  position: relative;
+  margin-top: -80px; /* negative value of footer height */
+  height: 80px;
+  clear:both;
+
+}
+
+.footer button {
+  margin-top: 30px;
+  @include span-columns(3);
+  font-size: 16px;
+  border: 1px solid rgba(254, 115, 108, 1);
+  border-radius: 5px;
+
+
+}
+
+.footerButtons {
+  @include outer-container;
+}
+
+
+// Question Pages
+
+.questions {
+  @include outer-container;
+
+}
+
+.clueTitle {
+  font-family: 'Pacifico', cursive;
+  color: rgba(5, 46, 68, 1);
+  @include shift(1);
+  @include span-columns(10);
+  text-align: center;
+  font-size: 50px;
+
+  text-shadow:
+   -1px -1px 0 rgba(254, 115, 108, 1),
+    1px -1px 0 rgba(254, 115, 108, 1),
+    -1px 1px 0 rgba(254, 115, 108, 1),
+     1px 1px 0 rgba(254, 115, 108, 1);
+}
+
+
+.clue {
+  @include span-columns(10);
+  @include shift(1);
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Economica', sans-serif;
+}
+
+.questionTitle {
+  font-family: 'Pacifico', cursive;
+  color: rgba(5, 46, 68, 1);
+  @include shift(1);
+  @include span-columns(10);
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 10px;
+
+  text-shadow:
+   -1px -1px 0 rgba(254, 115, 108, 1),
+    1px -1px 0 rgba(254, 115, 108, 1),
+    -1px 1px 0 rgba(254, 115, 108, 1),
+     1px 1px 0 rgba(254, 115, 108, 1);
+}
+
+
+.question {
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
+.answers {
+  @include span-columns(10);
+  @include shift(1);
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  text-align: center;
+
+}
+.index {
+  padding-top: 30px;
+  @include outer-container;
+
+}
+
+.cities {
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: 'Economica', sans-serif;
+  font-size: 20px;
+}
+
+.heading {
+  font-family: 'Pacifico', cursive;
+  color: rgba(5, 46, 68, 1);
+  @include shift(1);
+  @include span-columns(10);
+  text-align: center;
+  font-size: 50px;
+
+  text-shadow:
+   -1px -1px 0 rgba(254, 115, 108, 1),
+    1px -1px 0 rgba(254, 115, 108, 1),
+    -1px 1px 0 rgba(254, 115, 108, 1),
+     1px 1px 0 rgba(254, 115, 108, 1);
+}
+
+.Economica{
+  font-family: 'Economica', sans-serif;
+}
+
+ol {
+@include shift(1);
+@include span-columns(10);
+border: 2px solid rgba(254, 115, 108, 1);
+border-radius: 5px;
+font-size: 20px;
+
+
+}
+
+p {
+  @include span-columns(10);
+  @include shift(1);
+  margin-bottom: 50px;
+  border: 2px solid rgba(254, 115, 108, 1);
+  border-radius: 5px;
+  font-size: 20px;
+}
