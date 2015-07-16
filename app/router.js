@@ -50,6 +50,16 @@ Router.map(function() {
     this.route('11');
   });
 
+  this.route('login');
+
+  this.route('users', function() {
+    this.route('create');
+    this.route('current');
+  });
+
+  this.route('privacypolicy');
+  this.route('termsconditions');
+  this.route('agreement');
 });
 
 export default Router;

@@ -1,0 +1,15 @@
+
+<div class="agreement">
+
+  <div class="agreementInfo">Please check the box below if you agree with the terms &amp; conditions outlined in {{#link-to 'termsconditions'}} Terms &amp; Conditions {{/link-to}}. <br>
+  If you do not agree, please do not proceed with this adventure.</div>
+
+
+  <form onsubmit="return checkForm(this);">
+<input type="checkbox" required name="terms"> I accept the <u>Terms and Conditions</u>
+{{#link-to 'questions.1'}}<input type="submit">{{/link-to}}
+</form>
+
+</div>
+
+{{outlet}}

@@ -1,0 +1,8 @@
+<div class="signIn">
+
+<form {{action 'authenticate' on='submit'}}>
+  {{input placeholder="E-mail" type="email" }}
+  {{input placeholder="Password" type="password" }}
+  <button>{{#link-to 'index'}}Log In{{/link-to}}</button>
+</form>
+</div>

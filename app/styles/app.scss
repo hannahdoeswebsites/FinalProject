@@ -129,7 +129,7 @@ padding-bottom: 80px;
 }
 
 .footer {
-  background-color: black;
+
   position: relative;
   margin-top: -80px; /* negative value of footer height */
   height: 80px;
@@ -270,3 +270,95 @@ p {
   border-radius: 5px;
   font-size: 20px;
 }
+
+//createUser
+
+.createUser {
+  @include outer-container;
+}
+ .createUser form {
+   @include span-columns(8);
+   @include shift(3);
+   margin-top: 40px;
+ }
+
+.createUser button {
+  @include span-columns(10);
+  height: 20px;
+}
+
+.createUser input {
+@include span-columns(10);
+margin-bottom: 10px;
+height: 20px;
+border: 2px solid black;
+border-radius: 5px;
+text-align: center;
+}
+
+//signIn
+
+.signIn {
+  @include outer-container;
+}
+ .signIn form {
+   @include span-columns(8);
+   @include shift(3);
+   margin-top: 40px;
+ }
+
+.signIn button {
+  @include span-columns(10);
+  height: 20px;
+}
+
+.signIn input {
+@include span-columns(10);
+margin-bottom: 10px;
+height: 20px;
+border: 2px solid black;
+border-radius: 5px;
+text-align: center;
+}
+
+//privacypolicy
+
+.privacypolicy {
+  @include outer-container;
+}
+
+.privacypolicy h4{
+  text-align: center;
+}
+
+.policyHeading {
+  font-weight: bold;
+}
+
+//agreement
+
+.agreement {
+  @include outer-container;
+  text-align: center;
+  margin-top: 50px;
+  font-family: 'Economica', sans-serif;
+}
+
+.agreement form{
+  margin-top: 15px;
+}
+
+
+//links
+
+a:link { color: rgba(104, 176, 198, 1);
+  text-decoration: none;} /* unvisited links */
+a:visited { color: rgba(254, 115, 108, 1);
+  text-decoration: none;} /* visited links */
+a:hover { font-weight: rgba(104, 176, 198, 1);
+  text-decoration: none; } /* user hovers */
+a:active { color: rgba(104, 176, 198, 1);
+  text-decoration: none; } /* active links */
+
+button {
+  outline:none; }

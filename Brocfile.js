@@ -4,7 +4,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp();
 app.import('bower_components/jquery-ui/jquery-ui.js');
-app.import('bower_components/jquery/jquery.js');
+app.import('bower_components/jquery.sticky/jquery.sticky.js');
 
 
 // Use `app.import` to add additional libraries to the generated

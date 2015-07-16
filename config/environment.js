@@ -13,22 +13,29 @@ module.exports = function(environment) {
       }
     },
 
+
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      applicationId: 'xowOA0wnBsBzYKXSwK0xBEjcZn6ROTqNUQZMYVQE',
+        restApiId: 'TKetqikwAMcFBz5yClP9gpQ7KqEFnekWaEZjnLfv'
+      },
 
       contentSecurityPolicy: {
     'default-src': "'none'",
     'script-src': "'self'",
     'font-src': "'self' fonts.gstatic.com fonts.googleapis.com",
-    'connect-src': "'self'",
+    'connect-src': "'self' api.parse.com",
     'img-src': "'self'",
     'media-src': "'self'",
     'style-src': "'self' fonts.googleapis.com"
   },
-    }
 
-  };
+  'simple-auth': {
+authorizer: 'authorizer:parse',
+crossOriginWhitelist: ['https://api.parse.com']
+}
+
+};
+
 
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;

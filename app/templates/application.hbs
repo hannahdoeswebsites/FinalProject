@@ -5,7 +5,7 @@
 
 
   <div class="wrap">
-    <a href="#" class="button"> Sign up! </a> {{#link-to 'index' class="button"}}  Home {{/link-to}}
+    <div class="button">{{#link-to 'users.create'}} Sign up! {{/link-to}}</div> <div class="button">{{#link-to 'login'}}  Sign In {{/link-to}}</div>
 </div>
 
 </header>
@@ -20,8 +20,8 @@
   <div class="footer">
     <div class="footerButtons">
     <button> Contact us! </button>
-    <button> Terms &amp; Conditions </button>
-    <button> Release Form </button>
-    <button> <a href="https://www.facebook.com/townsontour"> Facebook </a> </button>
+    <button> {{#link-to 'privacypolicy'}}Privacy Policy{{/link-to}} </button>
+    <button> {{#link-to 'termsconditions'}}Terms &amp; Conditions{{/link-to}} </button>
+    <button> <a href="https://www.facebook.com/townsontour"> TOT Facebook </a> </button>
 </div>
   </div>
