@@ -59,7 +59,8 @@ routeIfAlreadyAuthenticated: 'questions.1',
   }
 
   if (environment === 'production') {
-
+    ENV.baseURL = '/FinalProject/';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
