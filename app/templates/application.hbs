@@ -5,7 +5,14 @@
 
 
   <div class="wrap">
-    <div class="button">{{#link-to 'users.create'}} Sign up! {{/link-to}}</div> <div class="button">{{#link-to 'login'}}  Sign In {{/link-to}}</div>
+    {{#if session.isAuthenticated}}
+    <div class="button" {{action 'invalidateSession'}}> Log Out </div>
+    {{else}}
+    <div class="button">{{#link-to 'users.create'}} Sign up! {{/link-to}}</div>
+
+    <div class="button">{{#link-to 'login'}}  Sign In {{/link-to}}</div>
+
+    {{/if}}
 </div>
 
 </header>
