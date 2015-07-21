@@ -36,6 +36,6 @@
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
     "ember-parse-adapter": "0.5.3",
-    "ember-simple-auth-parse": "0.0.6"
+    "ember-simple-auth-parse": "0.0.7"
   }
 }

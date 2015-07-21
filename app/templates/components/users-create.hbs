@@ -1,9 +1,12 @@
 <div class="createUser">
+  {{#if signupErrorMessage}}
+  <h1> Username or Email already taken </h1>
+  {{/if}}
 <form {{action 'createUser' on='submit'}}>
   {{input placeholder="Username" value=model.username}}
   {{input placeholder="E-mail" type="email" value=model.email}}
   {{input placeholder="Password" type="password" value=model.password}}
   {{input placeholder="ZipCode" type="text" value=model.zipcode}}<br>
-  <button>{{#link-to 'index'}}Sign Up{{/link-to}}</button>
+  <button type="submit"> Sign Up </button>
 </form>
 </div>
