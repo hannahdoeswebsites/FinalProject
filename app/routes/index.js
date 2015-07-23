@@ -1,7 +1,7 @@
 import Ember from 'ember';
 import UnauthenticatedRouteMixin from 'simple-auth/mixins/unauthenticated-route-mixin';
 
-export default Ember.Route.extend(UnauthenticatedRouteMixin)({
+export default Ember.Route.extend(UnauthenticatedRouteMixin, {
   model: function() {
    return Ember.A([
      {title: "Home", lat: 14.766127, lng: 102.810987, body: "Here is B&H's home"},
