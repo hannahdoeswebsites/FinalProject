@@ -7,6 +7,7 @@
   <div class="wrap">
     {{#if session.isAuthenticated}}
     <div class="button" {{action 'invalidateSession'}}> Log Out </div>
+    <div class="button">{{#link-to 'index'}}Home{{/link-to}}</div>
     {{else}}
     <div class="button">{{#link-to 'users.create'}} Sign up! {{/link-to}}</div>
 
@@ -26,7 +27,7 @@
 
   <div class="footer">
     <div class="footerButtons">
-    <button> Contact us! </button>
+    <button>{{#link-to 'contact'}}Contact us! {{/link-to}} </button>
     <button> {{#link-to 'privacypolicy'}}Privacy Policy{{/link-to}} </button>
     <button> {{#link-to 'termsconditions'}}Terms &amp; Conditions{{/link-to}} </button>
     <button> <a href="https://www.facebook.com/townsontour"> TOT Facebook </a> </button>

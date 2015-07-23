@@ -15,7 +15,7 @@ app.import('bower_components/jquery.sticky/jquery.sticky.js');
 // object's keys should be the environment name and the values
 // should be the asset to use in that environment.
 //
-// If the library that you are including contains AMD or ES6
+// If the library that you are Iluding contains AMD or ES6
 // modules that you would like to import into your application
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.

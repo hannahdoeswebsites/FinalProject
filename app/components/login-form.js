@@ -1,6 +1,6 @@
 import Ember from 'ember';
-import LoginControllerMixin from 'simple-auth/mixins/login-controller-mixin';
+import LogIontrollerMixin from 'simple-auth/mixins/login-controller-mixin';
 
-export default Ember.Component.extend(LoginControllerMixin, {
+export default Ember.Component.extend(LogIontrollerMixin, {
  authenticator: 'authenticator:parse-username'
 });

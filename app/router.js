@@ -21,7 +21,7 @@ Router.map(function() {
     this.route('12');
   });
 
-  this.route('correct', function() {
+  this.route('C', function() {
     this.route('1');
     this.route('2');
     this.route('3');
@@ -36,7 +36,7 @@ Router.map(function() {
     this.route('12');
   });
 
-  this.route('incorrect', function() {
+  this.route('I', function() {
     this.route('1');
     this.route('2');
     this.route('3');
@@ -60,6 +60,9 @@ Router.map(function() {
   this.route('privacypolicy');
   this.route('termsconditions');
   this.route('agreement');
+  this.route('contact');
+  this.route('images');
 });
+
 
 export default Router;

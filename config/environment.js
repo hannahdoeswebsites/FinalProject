@@ -13,6 +13,8 @@ module.exports = function(environment) {
       }
     },
 
+    filepickerKey: 'AXblnjPnoQ3GMMXyVeGNiz',
+
 
     APP: {
       applicationId: 'xowOA0wnBsBzYKXSwK0xBEjcZn6ROTqNUQZMYVQE',
@@ -21,12 +23,11 @@ module.exports = function(environment) {
 
       contentSecurityPolicy: {
     'default-src': "'none'",
-    'script-src': "'self'",
-    'font-src': "'self' fonts.gstatic.com fonts.googleapis.com",
-    'connect-src': "'self' api.parse.com",
-    'img-src': "'self'",
-    'media-src': "'self'",
-    'style-src': "'self' fonts.googleapis.com"
+    'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+    'font-src': "'self' fonts.gstatic.com",
+    'connect-src': "'self' maps.gstatic.com",
+    'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
+    'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
   },
 
   'simple-auth': {

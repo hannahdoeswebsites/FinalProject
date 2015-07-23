@@ -1,0 +1,10 @@
+<li class="image">
+		<div class="thumbnail-container">
+			{{#link-to 'image-show' image}}
+				<h1 class="image-title">{{image.filename}}</h1>
+				<hr class="divider">
+			<img class="thumbnail" src='{{image.url}}'>
+			{{/link-to}}
+			<button type='submit' action='destroy'>Delete Image</button>
+		</div>
+</li>
