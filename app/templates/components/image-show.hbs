@@ -1,0 +1,14 @@
+<div class="full-image">
+  <ul class="images">
+  	{{#each model as |image|}}
+
+    <img class="image-show" src='{{image.url}}'>
+  	{{/each}}
+  </ul>
+<div class="upload">
+  <button>{{#link-to 'index'}}
+Back
+  {{/link-to}}
+</button>
+</div>
+</div>

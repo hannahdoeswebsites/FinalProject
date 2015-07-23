@@ -13,4 +13,25 @@
 {{#link-to 'I.9'}} D. 1776 {{/link-to}}</div>
 </div>
 
+<div class="map">
+
+{{google-map markerInfoWindowTemplateName='map/info-window'
+             markers=markers
+             lat=centerLat
+             lng=centerLng
+             zoom=zoom
+             gopt_zoomControl=false
+             type='map'
+             ev_click='didClickMap'}}
+
+<div class="controls">
+
+  <label>
+    Zoom:
+    {{input type="range" value=zoom min=18 max=20 step=1}}
+  </label>
+
+</div>
+</div>
+
 {{outlet}}

@@ -22,12 +22,13 @@ module.exports = function(environment) {
       },
 
       contentSecurityPolicy: {
-    'default-src': "'none'",
-    'script-src': "'self' 'unsafe-eval' *.googleapis.com maps.gstatic.com",
+    'default-src': "filepicker.io api.filepicker.io dialog.filepicker.io",
+    'script-src': "'self' 'unsafe-eval' 'unsafe-inline' *.googleapis.com maps.gstatic.com api.filepicker.io",
     'font-src': "'self' fonts.gstatic.com",
-    'connect-src': "'self' maps.gstatic.com",
+    'connect-src': "'self' maps.gstatic.com api.parse.com",
     'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
-    'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com"
+    'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com",
+    'frame-src': "dialog.filepicker.io framepicker.io"
   },
 
   'simple-auth': {

@@ -1,7 +1,7 @@
-# Final-project
+# Towns on Tour
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Towns on Tour was written in the Ember MVP framework with a parse back end, data from Google Maps, and trivia questions from different locations/restaurants in downtown Greenville.
+
 
 ## Prerequisites
 
@@ -12,6 +12,11 @@ You will need the following things properly installed on your computer.
 * [Bower](http://bower.io/)
 * [Ember CLI](http://www.ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)
+* [Ember Simple Auth](http://ember-simple-auth.com/)
+* [Google Maps](https://www.google.com/maps)
+* [FilePicker](https://www.filepicker.com)
+* [Ember Parse Adapter](https://github.com/clintjhill/ember-parse-adapter)
+* [Ember Simple Auth Parse](https://www.npmjs.com/package/ember-simple-auth-parse)
 
 ## Installation
 
@@ -50,4 +55,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

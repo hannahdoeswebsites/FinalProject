@@ -61,7 +61,7 @@ Router.map(function() {
   this.route('termsconditions');
   this.route('agreement');
   this.route('contact');
-  this.route('images');
+  this.route('image');
 });
 
 

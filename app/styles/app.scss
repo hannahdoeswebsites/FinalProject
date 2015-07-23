@@ -224,6 +224,8 @@ padding-bottom: 80px;
   padding-bottom: 20px;
   font-family: 'Economica', sans-serif;
   font-size: 20px;
+  a:hover { color: rgba(254, 115, 108, 1);
+    text-decoration: underline; } /* user hovers */
 }
 
 .heading {
@@ -318,6 +320,8 @@ text-align: center;
 
 .privacypolicy {
   @include outer-container;
+  @include span-columns(10 of 12);
+  @include shift(1);
 }
 
 .privacypolicy h4{
@@ -370,12 +374,98 @@ button {
 
 
 .map-canvas {
-  width: 600px;
-  height: 400px;
+  @include span-columns(12);
+  height: 300px;
 }
 
 .map {
   @include outer-container;
-  align-items: center;
-  justify-content: center;
+  margin-top: 10px;
+
+
 }
+
+//Image Page
+
+.images {
+  text-align: center;
+  @include outer-container;
+
+}
+
+.imagesHeader {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 10px;
+  color: rgba(51, 51, 51, 1);
+  font-family: 'Economica', sans-serif;
+}
+
+.upload button{
+@include span-columns(6 of 6);
+font-size: 25px;
+border: 1px solid rgba(254, 115, 108, 1);
+border-radius: 5px;
+height: 50px;
+margin-bottom: 20px;
+margin-top: 20px;
+font-family: 'Pacifico', cursive;
+color: rgba(51, 51, 51, 1);
+}
+
+.full-image ul{
+  @include outer-container;
+  @include shift(1);
+
+}
+
+.images img {
+  @include span-columns(10 of 12);
+  align-items: center;
+  max-height: 400px;
+  margin-bottom: 20px;
+
+}
+
+
+//Contact Page
+
+.contactPage {
+  @include outer-container;
+  text-align: center;
+
+  h2 {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 1);
+    font-family: 'Economica', sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+#contact {
+  font-size: 40px;
+  font-family: 'Pacifico', cursive;
+  color: rgba(51, 51, 51, 1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link {
+  @include outer-container;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-family: 'Pacifico', cursive;
+    color: rgba(104, 176, 198, 1);
+    text-decoration: underline;
+
+    a:link { color: rgba(5, 46, 68, 1);
+      text-decoration: none;} /* unvisited links */
+    a:visited { color: rgba(5, 46, 68, 1);
+      text-decoration: none;} /* visited links */
+    a:hover { color: rgba(254, 115, 108, 1);
+      text-decoration: none; } /* user hovers */
+    a:active { color: rgba(5, 46, 68, 1);
+      text-decoration: none; } /* active links */
+    }
